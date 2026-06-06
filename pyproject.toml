@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ai-sbom"
-version = "0.1.2"
+version = "0.2.3"
 description = "AI-SBOM — generic alias for tibet-ai-sbom. BSI/G7 SBOM-for-AI implementation with cluster codes (AISBOM-MD/SLP/MOD/DSE/INF/SEC/KPI)."
 readme = "README.md"
 license = "MIT"
@@ -42,7 +42,9 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "tibet-ai-sbom>=0.2.0,<0.3",
+    "jis-core>=0.4.0",
+    "tibet-core>=0.5.0",
+    "tibet-ai-sbom==0.2.3",
 ]
 
 [project.scripts]
